@@ -166,10 +166,12 @@ ul.task-list input[type="checkbox"] {
 
   .card-title {
     color: var(--global-text-color);
+    font-size: medium;
   }
 
   .card-body {
     padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    margin-bottom: 10px;
   }
 }
 
@@ -582,6 +584,7 @@ footer.sticky-bottom {
     &.active .page-link {
       color: $white-color;
       background-color: var(--global-theme-color);
+      margin-bottom: 50px;
 
       &:hover {
         background-color: var(--global-theme-color);
@@ -617,7 +620,7 @@ footer.sticky-bottom {
       width: 100%;
     }
   }
-
+  
   .grid-sizer,
   .grid-item {
     width: 250px;

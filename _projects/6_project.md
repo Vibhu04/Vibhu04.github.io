@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 6
+title: Video Anomaly Detection for Laboratory Automation
 description: a project with no image
 img:
 importance: 4

@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Transfer Learning Toolkit for Large Language Models
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
-category: work
+title: MNIST Dataset Analysis
+description: a project with no image
+img:
+importance: 4
+category: 
 ---
 
 Every project has a beautiful feature showcase page.
