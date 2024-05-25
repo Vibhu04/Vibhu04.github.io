@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Dataset Distillation via the Wasserstein metric 
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+description: Collaborative research project
+img: assets/img/wasss.png
 importance: 2
 category: work
-giscus_comments: true
+giscus_comments: false
 ---
 
 Every project has a beautiful feature showcase page.
