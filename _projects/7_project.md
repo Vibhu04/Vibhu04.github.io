@@ -1,8 +1,8 @@
 ---
 layout: page
 title: AES-128 Encryption System in C
-description: a project with no image
-img:
+description: Personal project in C
+img: assets/img/aes.jpg
 importance: 4
 category: 
 ---

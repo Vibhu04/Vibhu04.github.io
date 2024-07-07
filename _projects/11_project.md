@@ -2,7 +2,7 @@
 layout: page
 title: Xnect
 description: a project with no image
-img:
+img: assets/img/xnect.jpg
 importance: 4
 category: 
 ---

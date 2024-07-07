@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Pondy Run
-description: a project with no image
-img:
+description: Endless runner game for Android
+img: assets/img/pondy_run.gif
 importance: 4
 category: 
 ---

@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Panda Arm Simulator
-description: a project with no image
-img:
+description: Gazebo simulator in C++
+img: assets/img/panda.gif
 importance: 4
 category: 
 ---

@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Airline E-ticketing System
-description: a project with no image
-img:
+description: Personal project in C++
+img: assets/img/skyro.png
 importance: 4
 category: 
 ---
