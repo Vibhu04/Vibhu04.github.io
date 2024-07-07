@@ -1,80 +1,27 @@
 ---
 layout: page
 title: ChessGPT
-description: another without an image
-img:
+description: AI Chess Engine
+img: assets/img/chess_demo.gif
 importance: 3
 category: fun
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/chess_demo_red.gif" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    An opening sequence against the Chess AI.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+While tinkering with OpenAI's GPT2, I thought of experimenting with it to see how well it can assimilate chess games and then actually play afterwards. GPT-2 is a large language model capable of generating realistic text, and is often fine-tuned to accomplish other NLP tasks. In order to fine-tune it, a large dataset of sequences (sentences) is required so that the model can train on it and pick up relevant patterns. However, there's no strict requirement that the sequences should correspond to sentences of a particular language. In other words, in theory one can provide GPT2 with any dataset of sequences, and it will try to assimilate key patterns during the fine-tuning phase. Thus, as absurd as it might sound, it's actually possible to train GPT2 on chess games.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+A chess game is after all nothing but a 'sequence' of moves. And this sequence can be digitally stored in the [UCI](https://en.wikipedia.org/wiki/Universal_Chess_Interface) format. Thanks to a lot of nice people, several large open-source databases of chess games stored in the UCI format have been uploaded online. I scraped several of these from the internet and combined them to form a large database of chess games. After that, I wrote the Python scripts for fine-tuning GPT2 and then let it train for some hours using Google Colab's GPU. For the model to choose its next move, I implemented a customised beam search algorithm which made the model explicitly predict the gameplay a certain number of moves ahead and then take its decision. I also integrated the model with an open source GUI so that once can actually play with it. 
 
-{% raw %}
+The model currently manages to play a decent opening game, but struggles to play sensible moves thereafter. In the future it could be improved upon by a longer/different training method or by integrating it with heuristic approaches to avoid nonsensical moves.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+You can cccess the code repository on Github [here](https://github.com/Vibhu04/ChessGPT).

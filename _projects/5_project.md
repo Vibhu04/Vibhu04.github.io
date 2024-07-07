@@ -1,80 +1,31 @@
 ---
 layout: page
 title: Visual Saliency Map Translation
-description: a project with a background image
-img: assets/img/1.jpg
+description: Personal research project  
+img: assets/img/vs.png
 importance: 3
 category: fun
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/vs_cover.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Example outputs from the Visual Saliency Translator.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+During my research internship at DREAM Lab (University of Illinois Urbana-Champaign), I collaborated with [Dr. Haohan Wang](https://haohanwang.github.io/) on a project aimed at enhancing the interpretability of Convolutional Neural Networks (CNNs). Like other deep neural networks, CNNs suffer from a lack of interpretability and transparency, making it difficult to understand the rationale behind their predictions—a phenomenon often likened to a 'black box'. This lack of interpretability poses risks when deploying CNNs for critical tasks, as it is challenging to predict when or why the model might make an inaccurate prediction. The study of improving interpretability in machine learning models falls under the field of Explainable AI, in which [Dr. Haohan Wang](https://haohanwang.github.io/) is a leading researcher.  
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+The Visual Saliency Translator we designed consists of two key components:
+- A visual saliency map generator, which identifies the regions of the input image most relevant or important to the model's prediction.
+- An image-to-text model, which takes the output of the visual saliency generator and produces a textual explanation of the visual saliency map.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+We experimented with the family of [GradCAM](https://arxiv.org/abs/1610.02391) models as our visual saliency map generators. These models, given a CNN and an input image, produce a heatmap that highlights the crucial regions of the image in relation to the CNN's predictions. For the image-to-text model, we used the [BLIP](https://arxiv.org/abs/2201.12086) model. Examples of the final results from the entire pipeline are illustrated at the top.
 
-{% raw %}
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
 
-{% endraw %}
+Access the code repository on Github [here](https://github.com/Vibhu04/Saliency-Map-Translation).
+
+Access the Google Slides document, which contains the project elements, [here](https://docs.google.com/presentation/d/1KbaGFRb2mKC1iR1XBGqDzyzhdvCFhQnXy0GpsowUe_s/edit?usp=sharing).

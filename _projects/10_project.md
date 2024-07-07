@@ -1,8 +1,8 @@
 ---
 layout: page
-title: MNIST Dataset Analysis
-description: a project with no image
-img:
+title: 2D Hand Pose Estimation
+description: Collaborative research project
+img: assets/img/color_seg.gif
 importance: 4
 category: 
 ---
