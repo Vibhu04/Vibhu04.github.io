@@ -3,7 +3,7 @@ layout: page
 title: Visual Saliency Map Translation
 description: Personal research project  
 img: assets/img/vs.png
-importance: 3
+importance: 2
 category: fun
 ---
 

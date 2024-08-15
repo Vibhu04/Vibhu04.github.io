@@ -3,7 +3,7 @@ layout: page
 title: ChessGPT
 description: AI Chess Engine
 img: assets/img/chess_demo.gif
-importance: 3
+importance: 2
 category: fun
 ---
 

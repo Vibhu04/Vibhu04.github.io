@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 2D Hand Pose Estimation
-description: Collaborative research project
-img: assets/img/color_seg.gif
-importance: 4
+title: Airline E-ticketing System
+description: Personal project in C++
+img: assets/img/skyro.png
+importance: 4.5
 category: 
 ---
 

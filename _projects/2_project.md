@@ -3,7 +3,7 @@ layout: page
 title: Dataset Distillation via the Wasserstein metric 
 description: Collaborative research project
 img: assets/img/wasss.png
-importance: 2
+importance: 1
 category: work
 giscus_comments: false
 ---
