@@ -2,17 +2,17 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Vibhu Dalal
     - name: Date of Birth
-      value: 14th March 1879
+      value: 4th August 2002
     - name: Languages
-      value: English, German
+      value: English, French, Hindi
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
+    - title: Master's
+      institution: Université Paris Cité, Paris, France
       year: 1905
       description:
         - Description 1.

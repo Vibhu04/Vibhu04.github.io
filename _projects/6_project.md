@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Video Anomaly Detection for Laboratory Automation
-description: Collaboraive research project
+description: Collaborative research project
 img: assets/img/anomaly.png
 importance: 2
 category: fun
