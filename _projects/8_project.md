@@ -12,7 +12,7 @@ category:
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/color_seg.gif" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
+</div>  
 <div class="caption">
     Example output from our real-time 2D hand pose estimation algorithm
 </div>

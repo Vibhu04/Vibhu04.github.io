@@ -8,10 +8,8 @@ profile:
   align: right
   image: dp_.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    # <p>555 your office number</p>
-    # <p>123 your address street</p>
-    # <p>Your City, State 12345</p>
+  more_info: 
+    <p>Paris, France</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -20,7 +18,7 @@ social: true # includes social icons at the bottom of the page
 <br>
 ### About me <br>
 
-I'm a college graduate from India, preparing to pursue a Master's in Applied Mathematics from Fall 2024. I'm currently doing a remote researchs internship at DREAM Lab run by Dr. Haohan Wang at University of Illinois Urbana-CHampaign, and at Dr. Min Xu's Lab ats Carnegie Mellon University. Previously I worked as a machine learning and softare engineering intern at Telekinesis AI, a robotics and AI startup based at TU Darmstadt. I graduated from the Sri Aurobindo International Centre of Education with a B.Sc. in Mathematics and Computer Science.
+I’m a Master's student at Université Paris Cité studying Applied Mathematics. I've previously gained some research and industry experience in the fields of machine learning, computer vision, software engineering, and technical analysis. Most recently, I worked remotely as a Machine Learning Engineer at Neptune Technologies LLC, a fintech company based in Florida, USA. Prior to that, I did remote research internships at DREAM Lab, run by Dr. Haohan Wang at the University of Illinois Urbana-Champaign, and at Dr. Min Xu's lab at Carnegie Mellon University. I also interned at Telekinesis AI, a robotics and AI startup at TU Darmstadt. I graduated from the Sri Aurobindo International Centre of Education with a B.Sc. in Mathematics and Computer Science.
 
 <!-- I’m a Masters student at Centrale Nantes studying Advanced Robotics. I work as a research assistant at Lab-V2 run by Dr. Paulo Shakarian at Arizona State University and at ARLIS at the University of Maryland. Previously I interned in Dr. Min Xu’s Lab at Carnegie Mellon University. I was very fortunate to be one of the early members of Telekinesis, a robotics and AI startup based at TU Darmstadt. I graduated from the Sri Aurobindo International Centre of Education with a B.Sc. in Computer Science, Math and Physics.
 
