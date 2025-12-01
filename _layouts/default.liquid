@@ -47,6 +47,18 @@
       {% endif %}
     </div>
 
+    {%- if site.clustrmaps_widget and site.clustrmaps_widget != '' -%}
+    <div class="container mt-3 mb-3">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <div id="clustrmaps-widget" style="max-width: 3px; max-height: 1px; overflow: hidden;">
+            {{ site.clustrmaps_widget | raw }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {%- endif -%}
+
     <!-- Footer -->
     {% include footer.liquid %}
 

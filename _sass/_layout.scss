@@ -51,3 +51,22 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+
+// ClustrMaps Widget
+#clustrmaps-widget {
+  text-align: center;
+  
+  iframe, object, embed {
+    max-width: 100% !important;
+    height: 10px !important;
+  }
+
+  
+  // Ensure the widget container doesn't interfere with interactions
+  pointer-events: auto;
+  
+  // Center the widget
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

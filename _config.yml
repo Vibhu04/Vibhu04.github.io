@@ -65,6 +65,8 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
+# clustrmaps_widget: "<script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=n&d=BKLPODrXjQfPZLeZBB0OkYJibDPkigEOnpnfUM3rwW8&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>"
+clustrmaps_widget: "<script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?d=QFjMvKFipV2htL1ozaO8WCTBBV-Ks8dMp_EDgeuCUzw&cl=ffffff&w=a'></script>"
 
 acm_id: # your dl.acm.org/profile/id
 blogger_url: # your blogger URL
